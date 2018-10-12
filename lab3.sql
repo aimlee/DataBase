@@ -41,8 +41,10 @@ SELECT Name FROM Departments
   );
 
 --14
-SELECT name from employees WHERE city='Almaty' UNION
-SELECT name from customers WHERE city='Almaty';
+SELECT name from employees 
+WHERE city='Almaty' UNION
+SELECT name from customers
+ WHERE city='Almaty';
 
 --15
 SELECT * from departments WHERE budget>60000 ORDER BY budget, code DESC;
@@ -62,3 +64,4 @@ DELETE FROM employees;
 SELECT * from employees;
 SELECT * from customers;
 SELECT * from departments;
+
